@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import { Segment, Form, Button } from "semantic-ui-react";
 class EventForm extends Component {
   render() {
+    const { cancelFormOpen } = this.props;
     return (
       <Segment>
         <Form>
           <Form.Field>
             <label>Event Title</label>
-            <input placeholder="First Name" />
+            <input placeholder="Event name" />
           </Form.Field>
           <Form.Field>
             <label>Event Date</label>
@@ -28,7 +29,9 @@ class EventForm extends Component {
           <Button positive type="submit">
             Submit
           </Button>
-          <Button type="button">Cancel</Button>
+          <Button onClick={cancelFormOpen} type="button">
+            Cancel
+          </Button>
         </Form>
       </Segment>
     );

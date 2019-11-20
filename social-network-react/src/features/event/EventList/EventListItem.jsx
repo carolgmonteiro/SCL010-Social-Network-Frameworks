@@ -13,7 +13,7 @@ export default class EventListItem extends Component {
               <Item.Content>
                 <Item.Header as="a">{event.title}</Item.Header>
                 <Item.Description>
-                  Hosted by <a>{event.hostedBy}y</a>
+                  Hosted by <a href="hosted by">{event.hostedBy}y</a>
                 </Item.Description>
               </Item.Content>
             </Item>
