@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Menu, Grid, Header } from "semantic-ui-react";
+import { Menu, Header } from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
 
 function SettingsNav() {
